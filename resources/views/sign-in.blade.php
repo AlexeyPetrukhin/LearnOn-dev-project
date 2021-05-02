@@ -15,7 +15,7 @@
 
                 <div class="login__logo">
                     <a href="">
-                        <img src="img/logo.png" alt="">
+                        <img src="img/sign-in/logo.png" alt="">
                     </a>
                 </div>
                 <div class="login__headline">
@@ -27,17 +27,17 @@
                         <div class="card_one card">
                             <div class="card-wrap">
                                 <div class="card__title">
-                                    <p>Выпущено обновление для IOS</p>
+                                    <p>{{ $posts[0]->tittle }}</p>
                                 </div>
                                 <div class="card__subtitle">
-                                    <p>Новая версия уже доступна в AppStore</p>
+                                    <p>{{ $posts[0]->description }}</p>
                                 </div>
                                 <div class="card-row">
                                     <div class="card__btn">
                                         <a href="">Подробнее</a>
                                     </div>
                                     <div class="card__date">
-                                        <p>13.04.2021</p>
+                                        <p>{{ $posts[0]->created_at }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -47,17 +47,17 @@
                         <div class="card_two card">
                             <div class="card-wrap">
                                 <div class="card__title">
-                                    <p>Выпущено обновление для IOS</p>
+                                    <p>{{ $posts[1]->tittle }}</p>
                                 </div>
                                 <div class="card__subtitle">
-                                    <p>Новая версия уже доступна в AppStore</p>
+                                    <p>{{ $posts[1]->description }}</p>
                                 </div>
                                 <div class="card-row">
                                     <div class="card__btn">
                                         <a href="">Подробнее</a>
                                     </div>
                                     <div class="card__date">
-                                        <p>13.04.2021</p>
+                                        <p>{{ $posts[1]->created_at }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -69,17 +69,17 @@
                     <div class="card_three">
                         <div class="card-wrap">
                             <div class="card__title">
-                                <p>Выпущено обновление для IOS</p>
+                                <p>{{ $posts[2]->tittle }}</p>
                             </div>
                             <div class="card__subtitle">
-                                <p>Новая версия уже доступна в AppStore</p>
+                                <p>{{ $posts[1]->description }}</p>
                             </div>
                             <div class="card-row">
                                 <div class="card__btn">
                                     <a href="">Подробнее</a>
                                 </div>
                                 <div class="card__date">
-                                    <p>13.04.2021</p>
+                                    <p>{{ $posts[1]->created_at }}</p>
                                 </div>
                             </div>
                         </div>
@@ -91,17 +91,17 @@
                         <div class="card_one card">
                             <div class="card-wrap">
                                 <div class="card__title">
-                                    <p>Выпущено обновление для IOS</p>
+                                    <p>{{ $posts[2]->tittle }}</p>
                                 </div>
                                 <div class="card__subtitle">
-                                    <p>Новая версия уже доступна в AppStore</p>
+                                    <p>{{ $posts[2]->description }}</p>
                                 </div>
                                 <div class="card-row">
                                     <div class="card__btn">
                                         <a href="">Подробнее</a>
                                     </div>
                                     <div class="card__date">
-                                        <p>13.04.2021</p>
+                                        <p>{{ $posts[2]->created_at }}</p>
                                     </div>
                                 </div>
                             </div>
@@ -111,17 +111,17 @@
                         <div class="card_two card">
                             <div class="card-wrap">
                                 <div class="card__title">
-                                    <p>Выпущено обновление для IOS</p>
+                                    <p>{{ $posts[3]->tittle }}</p>
                                 </div>
                                 <div class="card__subtitle">
-                                    <p>Новая версия уже доступна в AppStore</p>
+                                    <p>{{ $posts[3]->description }}</p>
                                 </div>
                                 <div class="card-row">
                                     <div class="card__btn">
                                         <a href="">Подробнее</a>
                                     </div>
                                     <div class="card__date">
-                                        <p>13.04.2021</p>
+                                        <p>{{ $posts[3]->created_at }}</p>
                                     </div>
                                 </div>
                             </div>

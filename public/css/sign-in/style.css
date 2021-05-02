@@ -146,6 +146,8 @@ body {
   margin: 0 0 18px 0;
 }
 
+/*
+Тень на карточке
 .card::after {
   content: "";
   background-color: rgba(0, 0, 0, 0.3);
@@ -156,6 +158,8 @@ body {
   left: 0;
   border-radius: 5px;
 }
+
+*/
 
 .card-wrap {
   position: relative;

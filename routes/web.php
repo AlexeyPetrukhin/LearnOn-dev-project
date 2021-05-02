@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +18,5 @@ Route::get('/test', function () {
     return view('sign-in');
 });
 
-Route::get('/', "PageController@signIn");
+Route::get('/', 'App\Http\Controllers\PageController@signIn');
+Route::get('/route', 'PageController@signIn');

@@ -17,7 +17,7 @@ class CreateBlogPostsTable extends Migration
             $table->id()->unique();
             $table->string('tittle');
             $table->text('description')->nullable();
-
+//            $table->date('created_posts');
 
             $table->softDeletes();
             $table->timestamps();
