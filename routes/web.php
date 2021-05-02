@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/test', function () {
     return view('sign-in');
 });
+
+Route::get('/', "PageController@signIn");
