@@ -1,0 +1,355 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "Museo";
+  src: url("../fonts/MuseoSansCyrl_1.eot");
+  src: local("☺"), url("../fonts/MuseoSansCyrl_1.woff") format("woff"), url("../fonts/MuseoSansCyrl_1.ttf") format("truetype"), url("../fonts/MuseoSansCyrl_1.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo";
+  src: url("../fonts/MuseoSansCyrl_2.eot");
+  src: local("☺"), url("../fonts/MuseoSansCyrl_2.woff") format("woff"), url("../fonts/MuseoSansCyrl_2.ttf") format("truetype"), url("../fonts/MuseoSansCyrl_2.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo";
+  src: url("../fonts/MuseoSansCyrl_3.eot");
+  src: local("☺"), url("../fonts/MuseoSansCyrl_3.woff") format("woff"), url("../fonts/MuseoSansCyrl_3.ttf") format("truetype"), url("../fonts/MuseoSansCyrl_3.svg") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+body {
+  min-height: 100%;
+  font-family: "Museo", sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+.login {
+  min-height: 100vh;
+}
+
+.login-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-col_left {
+  min-height: 100vh;
+  padding: 50px;
+  background-color: #3B69DE;
+}
+
+.login-col {
+  flex: 0 0 50%;
+}
+
+.login__logo {
+  margin: 0 0 50px 0;
+  text-align: center;
+}
+
+.login__headline {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  margin: 0 0 50px 0;
+  text-align: center;
+}
+
+.card-col {
+  flex: 0 0 49%;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  margin: 0 0 18px 0;
+}
+
+.card::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.card-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.card_one {
+  background: url("../img/login/01.png") center/cover no-repeat;
+}
+
+.card_two {
+  background: url("../img/login/02.png") center/cover no-repeat;
+}
+
+.card_three {
+  background: url("../img/login/03.png") center/cover no-repeat;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  margin: 0 0 18px 0;
+}
+
+.card__title {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  margin: 0 0 10px 0;
+}
+
+.card__subtitle {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin: 0 0 80px 0;
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__btn a {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  padding: 3px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.card__date {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.login-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2A2A2A;
+  margin: 0 0 30px 0;
+}
+
+.login__form {
+  width: 390px;
+}
+
+.login__tip {
+  font-size: 20px;
+  color: #2A2A2A;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.login_signin {
+  background: url("../img/login/icon_01.svg") 98% 50%/24px 24px no-repeat;
+}
+
+.login_password {
+  background: url("../img/login/icon_02.svg") 98% 50%/24px 24px no-repeat;
+}
+
+.login__input {
+  border: 2px solid #DCDEDF;
+  padding: 15px 34px 15px 15px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  color: #2A2A2A;
+  font-weight: 500;
+}
+
+.login__input:focus {
+  border: 2px solid #3B69DE;
+}
+
+.login__checkbox {
+  display: none;
+}
+
+.login__checked {
+  font-size: 20px;
+  color: #2A2A2A;
+  margin: 0 0 50px 0;
+}
+
+.login__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.login__checkbox + .login__checked {
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+          user-select: none;
+}
+
+.login__checkbox + .login__checked::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #3B69DE;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  border-radius: 5px;
+  transition: 0.2s ease 0s;
+}
+
+.login__checkbox:not(:disabled):active + .login__checked::before {
+  background-color: #3B69DE;
+  border-color: #3B69DE;
+}
+
+.login__checkbox:focus:not(:checked) + .login__checked::before {
+  border-color: #3B69DE;
+}
+
+.login__checkbox:checked + .login__checked::before {
+  border-color: #3B69DE;
+  background-color: #3B69DE;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.login__btn {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #3B69DE;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  margin: 0 0 30px 0;
+}
+
+.login__forger {
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  margin: 0 0 20px 0;
+}
+
+.login__registration {
+  font-size: 18px;
+  letter-spacing: 0.2px;
+}
+
+.login__forger a,
+.login__registration a {
+  color: #929292;
+}
+
+.login__forger a:hover,
+.login__registration a:hover {
+  color: #3B69DE;
+}
