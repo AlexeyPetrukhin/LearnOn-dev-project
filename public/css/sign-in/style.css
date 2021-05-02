@@ -74,22 +74,22 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 @font-face {
   font-family: "Museo";
-  src: url("../fonts/MuseoSansCyrl_1.eot");
-  src: local("☺"), url("../fonts/MuseoSansCyrl_1.woff") format("woff"), url("../fonts/MuseoSansCyrl_1.ttf") format("truetype"), url("../fonts/MuseoSansCyrl_1.svg") format("svg");
+  src: url("../../fonts/MuseoSansCyrl_1.eot");
+  src: local("☺"), url("../../fonts/MuseoSansCyrl_1.woff") format("woff"), url("../../fonts/MuseoSansCyrl_1.ttf") format("truetype"), url("../../fonts/MuseoSansCyrl_1.svg") format("svg");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Museo";
-  src: url("../fonts/MuseoSansCyrl_2.eot");
-  src: local("☺"), url("../fonts/MuseoSansCyrl_2.woff") format("woff"), url("../fonts/MuseoSansCyrl_2.ttf") format("truetype"), url("../fonts/MuseoSansCyrl_2.svg") format("svg");
+  src: url("../../fonts/MuseoSansCyrl_2.eot");
+  src: local("☺"), url("../../fonts/MuseoSansCyrl_2.woff") format("woff"), url("../../fonts/MuseoSansCyrl_2.ttf") format("truetype"), url("../../fonts/MuseoSansCyrl_2.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Museo";
-  src: url("../fonts/MuseoSansCyrl_3.eot");
-  src: local("☺"), url("../fonts/MuseoSansCyrl_3.woff") format("woff"), url("../fonts/MuseoSansCyrl_3.ttf") format("truetype"), url("../fonts/MuseoSansCyrl_3.svg") format("svg");
+  src: url("../../fonts/MuseoSansCyrl_3.eot");
+  src: local("☺"), url("../../fonts/MuseoSansCyrl_3.woff") format("woff"), url("../../fonts/MuseoSansCyrl_3.ttf") format("truetype"), url("../../fonts/MuseoSansCyrl_3.svg") format("svg");
   font-weight: 900;
   font-style: normal;
 }
@@ -163,15 +163,15 @@ body {
 }
 
 .card_one {
-  background: url("../img/login/01.png") center/cover no-repeat;
+  background: url("../../img/sign-in/login/01.png") center/cover no-repeat;
 }
 
 .card_two {
-  background: url("../img/login/02.png") center/cover no-repeat;
+  background: url("../../img/sign-in/login/02.png") center/cover no-repeat;
 }
 
 .card_three {
-  background: url("../img/login/03.png") center/cover no-repeat;
+  background: url("../../img/sign-in/login/03.png") center/cover no-repeat;
   padding: 20px;
   border-radius: 5px;
   position: relative;
@@ -243,11 +243,11 @@ body {
 }
 
 .login_signin {
-  background: url("../img/login/icon_01.svg") 98% 50%/24px 24px no-repeat;
+  background: url("../../img/sign-in/login/icon_01.svg") 98% 50%/24px 24px no-repeat;
 }
 
 .login_password {
-  background: url("../img/login/icon_02.svg") 98% 50%/24px 24px no-repeat;
+  background: url("../../img/sign-in/login/icon_02.svg") 98% 50%/24px 24px no-repeat;
 }
 
 .login__input {
