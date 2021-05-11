@@ -1,0 +1,165 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "Museo";
+  src: url("../../fonts/MuseoSansCyrl_1.eot");
+  src: local("☺"), url("../../fonts/MuseoSansCyrl_1.woff") format("woff"), url("../../fonts/MuseoSansCyrl_1.ttf") format("truetype"), url("../../fonts/MuseoSansCyrl_1.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo";
+  src: url("../../fonts/MuseoSansCyrl_2.eot");
+  src: local("☺"), url("../../fonts/MuseoSansCyrl_2.woff") format("woff"), url("../../fonts/MuseoSansCyrl_2.ttf") format("truetype"), url("../../fonts/MuseoSansCyrl_2.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Museo";
+  src: url("../../fonts/MuseoSansCyrl_3.eot");
+  src: local("☺"), url("../../fonts/MuseoSansCyrl_3.woff") format("woff"), url("../../fonts/MuseoSansCyrl_3.ttf") format("truetype"), url("../../fonts/MuseoSansCyrl_3.svg") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+body {
+  min-height: 100%;
+  font-family: "Museo", sans-serif;
+}
+
+.container {
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  min-height: 100vh;
+  padding: 50px 0 0 0;
+}
+
+.logo {
+  margin: 0 0 210px 0;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 36px;
+  color: #2A2A2A;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.text {
+  font-size: 18px;
+  color: #2A2A2A;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 0 0 30px 0;
+}
+
+.tip {
+  font-size: 20px;
+  color: #2A2A2A;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.input {
+  border: 2px solid #DCDEDF;
+  padding: 15px 34px 15px 15px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  color: #2A2A2A;
+  font-weight: 500;
+  background: url("../../img/recovery/icon_01.svg") 98% 50%/24px 24px no-repeat;
+}
+
+.input:focus {
+  border: 2px solid #3B69DE;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #3B69DE;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  margin: 50px 0 0 0;
+}

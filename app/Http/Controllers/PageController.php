@@ -8,9 +8,24 @@ use Illuminate\Support\Facades\DB;
 
 class PageController extends Controller
 {
-    public function signIn() {
-        //Решить проблему при отсутсвии записей в БД
+    public function signInPage() {
         $posts = DB::table('blog_posts')->get();
-        return view('sign-in',compact('posts'));
+        $countPosts = $posts->count();
+        return view('sign-in',compact('posts','countPosts'));
+    }
+
+    public function recoveryPage() {
+
+        return view('recovery');
+    }
+
+    public function sendLetterPage() {
+
+        return view('send-letter');
+    }
+
+    public function newPassword(){
+
+        return view('new-password');
     }
 }

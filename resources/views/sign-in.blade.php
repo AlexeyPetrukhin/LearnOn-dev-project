@@ -11,8 +11,6 @@
     <div class="login">
         <div class="login-row">
             <div class="login-col login-col_left">
-
-
                 <div class="login__logo">
                     <a href="">
                         <img src="img/sign-in/logo.png" alt="">
@@ -21,7 +19,6 @@
                 <div class="login__headline">
                     <p>Последние обновления системы</p>
                 </div>
-
                 <div class="login-row">
                     <div class="card-col">
                         <div class="card_one card">
@@ -43,6 +40,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="card-col">
                         <div class="card_two card">
                             <div class="card-wrap">
@@ -158,7 +156,7 @@
                     </form>
 
                     <div class="login__forger">
-                        <a href="#">Забыли пароль?</a>
+                        <a href="{{ route('recovery') }}">Забыли пароль?</a>
                     </div>
                     <div class="login__registration">
                         <a href="">Нет аккаунта? Зарегестрироваться</a>
