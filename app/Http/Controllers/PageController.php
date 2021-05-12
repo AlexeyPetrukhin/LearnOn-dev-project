@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\BlogPost;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 
 class PageController extends Controller
 {
@@ -24,8 +26,21 @@ class PageController extends Controller
         return view('send-letter');
     }
 
-    public function newPassword(){
+    public function newPasswordPage() {
 
         return view('new-password');
     }
+
+    public function successRequestPage() {
+        return view('success-request');
+    }
+
+    // ! Перенести метод в контроллер User
+    public function sendMessage(Request $request) {
+        $data = $request->input('email');
+        $user = DB::table('users');
+        dd($request);
+        return view('send-letter');
+    }
+
 }

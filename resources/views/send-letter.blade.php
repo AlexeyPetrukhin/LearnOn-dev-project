@@ -11,12 +11,12 @@
     <div class="container">
         <div class="logo">
             <a href="{{ route('main') }}">
-                <img src="img/send-letter/logo.png" alt="">
+                <img src="{{ asset("img/send-letter/logo.png") }}" alt="">
             </a>
         </div>
         <div class="inner">
             <div class="img">
-                <img src="img/send-letter/mail.png" alt="">
+                <img src="{{ asset("img/send-letter/mail.png") }}" alt="">
             </div>
             <div class="title">
                 <h1>Письмо отправлено</h1>

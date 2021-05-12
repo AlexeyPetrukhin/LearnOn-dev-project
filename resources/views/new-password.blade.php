@@ -11,7 +11,7 @@
     <div class="container">
         <div class="logo">
             <a href="{{ route('main') }}">
-                <img src="img/new-password/logo.png" alt="">
+                <img src="{{ asset("img/new-password/logo.png") }}" alt="">
             </a>
         </div>
         <div class="inner">

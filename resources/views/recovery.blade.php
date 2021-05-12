@@ -11,7 +11,7 @@
     <div class="container">
         <div class="logo">
             <a href="{{ route('main') }}">
-                <img src="../../img/recovery/logo.png" alt="">
+                <img src="{{ asset("img/recovery/logo.png") }}" alt="">
             </a>
         </div>
         <div class="inner">
@@ -22,12 +22,14 @@
                 <p>Ввдетие e-mail аккаунта, к которому потерян доступ. На данный
                     адрес будет отправлено письмо для восстановления доступа.</p>
             </div>
-            <form>
+            <form action="{{ route('sendMessage') }}" method="POST">
+                @csrf
                 <div class="tip">
                     <p>E-mail</p>
                 </div>
-                <input class="input" type="text">
+                <input class="input" type="text" name="email">
                 <input class="btn" type="submit" value="Восстановить">
+
             </form>
         </div>
     </div>
